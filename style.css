@@ -1,0 +1,33 @@
+body, html {
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.main h1 {
+  font-size: 15rem;
+  animation-name: cancer;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cancer {
+  0% {color: green;}
+  25% {color: red;}
+  50% {color: blue;}
+  75% {color: red;}
+  100% {color: green;}
+}
+
+img {
+  position: absolute;
+  top: 0;
+  transform: rotate(30deg);
+}
